@@ -1,0 +1,26 @@
+general:
+  min-faction-name-length: 3
+  max-faction-name-length: 16
+  allow-spaces-in-names: false
+
+power:
+  starting-power: 0
+  max-power: 10
+  power-loss-on-death: 4
+  power-regen-time: 300
+  power-regen-amount: 1
+
+factions:
+  creation-cost: 0
+  max-members: 0
+  allow-open-factions: true
+
+messages:
+  prefix: "&8[&6Factions&8]&r "
+  faction-created: "&aVous avez créé la faction {faction}!"
+  faction-disbanded: "&cLa faction {faction} a été dissoute."
+  already-in-faction: "&cVous êtes déjà dans une faction!"
+  not-in-faction: "&cVous n'êtes pas dans une faction!"
+  faction-exists: "&cUne faction avec ce nom existe déjà!"
+  faction-not-found: "&cCette faction n'existe pas!"
+  no-permission: "&cVous n'avez pas la permission de faire cela!"
