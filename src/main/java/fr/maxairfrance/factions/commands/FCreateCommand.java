@@ -2,6 +2,7 @@ package fr.maxairfrance.factions.commands;
 
 import fr.maxairfrance.factions.gestionfactions.FPlayer;
 import fr.maxairfrance.factions.gestionfactions.Factions;
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import java.util.ArrayList;
@@ -50,18 +51,13 @@ public class FCreateCommand extends FCommand {
 
         Factions.getInstance().createFaction(factionName, player.getUniqueId());
 
-        player.sendMessage(color("&a&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"));
-        player.sendMessage(color("&6&lFACTION CRÉÉE"));
-        player.sendMessage(color("&e"));
-        player.sendMessage(color("&aVous avez créé la faction &f" + factionName + "&a!"));
-        player.sendMessage(color("&aVous en êtes maintenant le chef."));
-        player.sendMessage(color("&a&l━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"));
+        player.sendMessage(color("&aVous avez créé la faction &f" + factionName + "&a !"));
 
         return true;
     }
 
     @Override
-    public List<String> onTabComplete(CommandSender sender, org.bukkit.command.Command command, String alias, String[] args) {
+    public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         return new ArrayList<>();
     }
 }
