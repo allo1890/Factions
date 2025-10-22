@@ -24,7 +24,7 @@ public class FShowCommand extends FCommand {
 
         if (args.length == 0) {
             if (!fPlayer.hasFaction()) {
-                player.sendMessage(color("&cVous n'appartenez à aucune faction!"));
+                player.sendMessage(color("&cVous n'appartenez à aucune faction !"));
                 player.sendMessage(color("&eUtilisez &f/f create <nom> &epour créer une faction."));
                 return true;
             }
@@ -79,7 +79,7 @@ public class FShowCommand extends FCommand {
             }
         }
 
-        player.sendMessage(color("&a&l-------------------------------"));
+        player.sendMessage(color("&a&m-------------------------------"));
         player.sendMessage(color("&6&l" + faction.getName().toUpperCase()));
         player.sendMessage(color("&7&o" + faction.getDescription()));
         player.sendMessage(color("&e◆ Chef: &f" + (leader != null ? leader.getName() : "Inconnu")));
@@ -88,7 +88,7 @@ public class FShowCommand extends FCommand {
         player.sendMessage(color("&e◆ Créée le: &f" + createdDate));
         player.sendMessage(color("&e&lMEMBRES:"));
         player.sendMessage(color("&f" + membersList));
-        player.sendMessage(color("&a&l-------------------------------"));
+        player.sendMessage(color("&a&m-------------------------------"));
     }
 
     private String getRoleColor(fr.maxairfrance.factions.gestionfactions.Role role) {

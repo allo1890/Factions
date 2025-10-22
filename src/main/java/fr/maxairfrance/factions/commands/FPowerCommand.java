@@ -75,10 +75,10 @@ public class FPowerCommand extends FCommand {
 
         target.isOnline();
 
-        viewer.sendMessage(color("&a&l------------------------------------------"));
+        viewer.sendMessage(color("&a&m------------------------------------------"));
         viewer.sendMessage(color("&6Pseudo: " + targetName.toUpperCase()));
         viewer.sendMessage(color("&ePower: " + powerColor + currentPower + "&7/&f" + maxPower));
-        viewer.sendMessage(color("&a&l------------------------------------------"));
+        viewer.sendMessage(color("&a&m------------------------------------------"));
     }
 
     @Override

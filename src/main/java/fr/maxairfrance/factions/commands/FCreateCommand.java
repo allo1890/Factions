@@ -18,7 +18,7 @@ public class FCreateCommand extends FCommand {
     @Override
     public boolean executeCommand(CommandSender sender, Player player, FPlayer fPlayer, String[] args) {
         if (fPlayer.hasFaction()) {
-            player.sendMessage(color("&cVous appartenez déjà à une faction! Quittez-la d'abord avec /f leave"));
+            player.sendMessage(color("&cVous appartenez déjà à une faction ! Quittez-la d'abord avec /f leave"));
             return true;
         }
 
@@ -45,7 +45,7 @@ public class FCreateCommand extends FCommand {
         }
 
         if (Factions.getInstance().exists(factionName)) {
-            player.sendMessage(color("&cUne faction avec ce nom existe déjà!"));
+            player.sendMessage(color("&cUne faction avec ce nom existe déjà !"));
             return true;
         }
 
