@@ -2,9 +2,11 @@ package fr.maxairfrance.factions;
 
 import fr.maxairfrance.factions.commands.FCreateCommand;
 import fr.maxairfrance.factions.commands.FDisbandCommand;
+import fr.maxairfrance.factions.commands.FPowerCommand;
 import fr.maxairfrance.factions.commands.FShowCommand;
 import fr.maxairfrance.factions.gestionfactions.FPlayers;
 import fr.maxairfrance.factions.gestionfactions.Factions;
+import fr.maxairfrance.factions.listener.player.PlayerDeathListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
@@ -31,6 +33,9 @@ public final class Main extends JavaPlugin {
         new FCreateCommand();
         new FShowCommand();
         new FDisbandCommand();
+        new FPowerCommand();
+
+        getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
     }
 
     @Override
