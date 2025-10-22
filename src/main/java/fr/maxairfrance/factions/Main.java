@@ -1,6 +1,7 @@
 package fr.maxairfrance.factions;
 
 import fr.maxairfrance.factions.commands.FCreateCommand;
+import fr.maxairfrance.factions.commands.FDisbandCommand;
 import fr.maxairfrance.factions.commands.FShowCommand;
 import fr.maxairfrance.factions.gestionfactions.FPlayers;
 import fr.maxairfrance.factions.gestionfactions.Factions;
@@ -29,6 +30,7 @@ public final class Main extends JavaPlugin {
 
         new FCreateCommand();
         new FShowCommand();
+        new FDisbandCommand();
     }
 
     @Override
