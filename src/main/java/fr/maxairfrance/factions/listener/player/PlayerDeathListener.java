@@ -21,7 +21,7 @@ public class PlayerDeathListener implements Listener {
         int powerLoss = Main.getInstance().getConfig().getInt("power.power-loss-on-death", 4);
 
         int oldPower = fPlayer.getPower();
-        int newPower = Math.max(0, oldPower - powerLoss);
+        int newPower = Math.max(-10, oldPower - powerLoss);
 
         fPlayer.setPower(newPower);
         FPlayers.getInstance().save(fPlayer);

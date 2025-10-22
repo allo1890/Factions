@@ -6,13 +6,11 @@ author: MaxAirFrance
 
 commands:
   f:
-    description: Commande principale des factions
     usage: /<command> [sous-commande] [arguments]
     aliases: [faction, factions]
 
 permissions:
   factions.*:
-    description: Donne accès à toutes les commandes de factions
     default: true
     children:
       factions.create: true
@@ -21,21 +19,16 @@ permissions:
       factions.info: true
 
   factions.create:
-    description: Permet de créer une faction
     default: true
 
   factions.show:
-    description: Permet d'afficher les informations d'une faction
     default: true
 
   factions.who:
-    description: Alias pour show
     default: true
 
   factions.info:
-    description: Alias pour show
     default: true
 
   factions.admin:
-    description: Permissions administrateur
     default: op

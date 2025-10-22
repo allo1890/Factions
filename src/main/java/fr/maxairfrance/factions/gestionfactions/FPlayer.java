@@ -65,7 +65,7 @@ public class FPlayer {
     }
 
     public void setPower(int power) {
-        this.power = Math.max(0, Math.min(power, maxPower));
+        this.power = Math.max(-10, Math.min(power, maxPower));
     }
 
     public int getMaxPower() {
