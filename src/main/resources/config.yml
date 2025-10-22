@@ -17,10 +17,10 @@ factions:
 
 messages:
   prefix: "&8[&6Factions&8]&r "
-  faction-created: "&aVous avez créé la faction {faction}!"
+  faction-created: "&aVous avez créé la faction {faction} !"
   faction-disbanded: "&cLa faction {faction} a été dissoute."
-  already-in-faction: "&cVous êtes déjà dans une faction!"
-  not-in-faction: "&cVous n'êtes pas dans une faction!"
-  faction-exists: "&cUne faction avec ce nom existe déjà!"
-  faction-not-found: "&cCette faction n'existe pas!"
-  no-permission: "&cVous n'avez pas la permission de faire cela!"
+  already-in-faction: "&cVous êtes déjà dans une faction !"
+  not-in-faction: "&cVous n'êtes pas dans une faction !"
+  faction-exists: "&cUne faction avec ce nom existe déjà !"
+  faction-not-found: "&cCette faction n'existe pas !"
+  no-permission: "&cVous n'avez pas la permission de faire cela !"

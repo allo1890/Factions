@@ -2,7 +2,6 @@ package fr.maxairfrance.factions.gestionfactions;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-
 import java.util.UUID;
 
 public class FPlayer {
